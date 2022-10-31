@@ -42,16 +42,29 @@ Para usar projeto, siga essas etapas:
 no CMD após conectar o wsl nele, execute:
 
 composer create-project laravel/laravel nomeapp
+<br>
 composer require laravel/sail
+<br>
 composer require laravel/breeze
+<br>
 php artisan breeze:install
+<br>
 npm install
+<br>
 npm run dev
+<br>
 php artisan migrate
+<br>
 php artisan sail:install
+<br>
 ./vendor/bin/sail up
+<br>
 
+depois disso, poderá entrar no local host.
 
+### 🤝 Declarações finais
+
+Agradeço a todos que me ajudaram neste projeto de encerramento de curso, aprendi várias coisas novas tanto aplicadas no curso quanto aprendidas no meu estágio, no começo foi bem dificil desenvolver as coisas pois nunca tive contato tão tirado e sozinho de uma coisa do zero, mas com muito esforço e dedicação, consegui chegar a um resultado apresentável 
 
 ## 🤝 Colaboradores
 
@@ -77,7 +90,5 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
   </tr>
 </table>
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
 
 [⬆ Voltar ao topo](#nome-do-projeto)<br>
