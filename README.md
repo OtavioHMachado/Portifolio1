@@ -25,7 +25,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
-* Você instalou a versão mais recente de Laravel/Docker?
+* Você instalou a versão mais recente de `Laravel/ Windows Docker?`
+* Você Seguiu o passo a passo  de comandos para instalar e atualizar os frameworks?
 * Você tem uma máquina `Ubuntu/Linux?`. Indique qual sistema operacional é compatível / não compatível.
 
 ## 🚀 Instalando Treino Intenso
