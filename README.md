@@ -2,7 +2,7 @@
 
 
 
-<img href="https://miro.medium.com/max/700/1*mQftYbY07wgHw9l-XxvqAw.jpeg" alt="exemplo imagem">
+<img src="https://miro.medium.com/max/700/1*mQftYbY07wgHw9l-XxvqAw.jpeg">
 
 > Projeto TI (Treino Intenso) na qual é para ajudar pessoas que querem começar a se exercitarem!
 
