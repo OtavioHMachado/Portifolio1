@@ -45,6 +45,11 @@ https://docs.docker.com/desktop/install/windows-install/
 
 Para usar projeto, siga essas etapas:
 
+cd /home
+explorer.exe .
+cd otavio272
+cd Portifolio1
+
 no CMD após conectar o wsl nele, execute:
 
 composer create-project laravel/laravel nomeapp
