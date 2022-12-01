@@ -52,7 +52,11 @@ explorer.exe .
 cd otavio272
 <br>
 cd Portifolio1
-
+<br>
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+<br>
+sail up
+<br>
 no CMD após conectar o wsl nele, execute:
 
 composer create-project laravel/laravel nomeapp
