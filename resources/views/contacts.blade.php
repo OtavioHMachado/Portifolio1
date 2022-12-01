@@ -27,15 +27,6 @@
           <nav class="rd-navbar container rd-navbar-floated rd-navbar-dark" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
             <div class="rd-navbar-inner">
               <div class=" context-dark">
-
-                <div class="right-side">
-                  <ul class="list-inline list-inline-sm">
-                    <li class="list-inline-item"><a class="novi-icon fa fa-facebook" href="#"></a></li>
-                    <li class="list-inline-item"><a class="novi-icon fa fa-twitter" href="#"></a></li>
-                    <li class="list-inline-item"><a class="novi-icon fa fa-google-plus" href="#"></a></li>
-                    <li class="list-inline-item"><a class="novi-icon fa fa-youtube" href="#"></a></li>
-                  </ul>
-                </div>
               </div>
               <div class="rd-navbar-panel">
                 <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
