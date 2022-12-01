@@ -57,8 +57,9 @@ alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 <br>
 sail up
 <br>
-no CMD após conectar o wsl nele, execute:
 
+no CMD após conectar o wsl nele, execute:
+<br>
 composer create-project laravel/laravel nomeapp
 <br>
 composer require laravel/sail
