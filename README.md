@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
 
 
 
@@ -9,6 +9,7 @@
 ### Sobre o projeto
 
 - Projeto para chamar atenção de pessoas que trabalham ou estudam na area de TI, para que consigam balancear a vida saudável com os estudos, até porque, quem trabalha nessa área fica muito tempo parado e acaba esquecendo ou até não tendo tempo de praticar exercícios físicos e ter uma alimentação saudável.
+- Ajudar Profissionais da area de educação fisica e nutrição no mercado de trabalho
 - Espero ajudar algumas pessoas :)
 
 ### Ajustes e melhorias
