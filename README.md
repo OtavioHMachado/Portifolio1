@@ -34,21 +34,20 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 Para instalar o TI(Treino Intenso), siga os links a seguir para facil instalação:
 
-Linux/Ubuntu
-
-https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
-
-Windows Docker
-
-https://docs.docker.com/desktop/install/windows-install/
-
-## ☕ Usando o TI(Treino Instenso)
-
-Para usar projeto, siga essas etapas:
-
-no CMD após conectar o wsl nele, execute:
+- Habilitar VM na BIOS do placa mãe
 <br>
-composer create-project laravel/laravel nomeapp
+- Instalar o WSL no computador
+Encontra-se facilmente no Windows Store.
+<br>
+- Instalar o Ubuntu
+    https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
+ <br>
+- Instalar o Docker 
+    https://docs.docker.com/desktop/install/windows-install/
+- Clone o projeto
+   
+-No terminal, instalar as bibliotecas com o seguintes comandos
+
 <br>
 composer require laravel/sail
 <br>
@@ -66,6 +65,21 @@ php artisan sail:install
 <br>
 ./vendor/bin/sail up
 <br>
+e para executar
+<br>
+sail up
+    
+
+
+
+
+
+
+
+
+
+
+
 
 depois disso, poderá entrar no local host.
 
