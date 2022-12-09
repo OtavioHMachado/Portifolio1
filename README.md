@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Tarefa 1 - Escopo do projeto
 - [x] Tarefa 2 - Escolher Linguagens
 - [x] Tarefa 3 - Fazer Backend
-- [ ] Tarefa 4 - Terminar Frontend
+- [x] Tarefa 4 - Terminar Frontend
 - [ ] Tarefa 5 - Apresentação
 
 ## 💻 Pré-requisitos
