@@ -46,19 +46,6 @@ https://docs.docker.com/desktop/install/windows-install/
 
 Para usar projeto, siga essas etapas:
 
-cd /home
-<br>
-explorer.exe .
-<br>
-cd otavio272
-<br>
-cd Portifolio1
-<br>
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-<br>
-sail up
-<br>
-
 no CMD após conectar o wsl nele, execute:
 <br>
 composer create-project laravel/laravel nomeapp
@@ -81,6 +68,21 @@ php artisan sail:install
 <br>
 
 depois disso, poderá entrar no local host.
+
+Para abrir no meu computador foi o seguinte processo:
+
+cd /home
+<br>
+explorer.exe .
+<br>
+cd otavio272
+<br>
+cd Portifolio1
+<br>
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+<br>
+sail up
+<br>
 
 ### 🤝 Declarações finais
 
