@@ -65,38 +65,11 @@ php artisan sail:install
 <br>
 ./vendor/bin/sail up
 <br>
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+<br>
 e para executar
 <br>
 sail up
-    
-
-
-
-
-
-
-
-
-
-
-
-
-depois disso, poderá entrar no local host.
-
-Para abrir no meu computador foi o seguinte processo:
-
-cd /home
-<br>
-explorer.exe .
-<br>
-cd otavio272
-<br>
-cd Portifolio1
-<br>
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-<br>
-sail up
-<br>
 
 ### 🤝 Declarações finais
 
