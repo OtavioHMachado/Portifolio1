@@ -1,10 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\modalidades;
+
+
+
 
 
 Route::get('/', function () {
-    return view('index');
+    return view('index', ['modalidades'=>modalidades::all()]);
 })->middleware(['auth'])->name('index');
 
 Route::get('/contacts', function () {
@@ -19,4 +23,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::resource('modalidades', modalidadesController::class);
 require __DIR__.'/auth.php';
+

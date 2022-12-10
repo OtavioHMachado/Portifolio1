@@ -38,6 +38,7 @@
                       <li class="active"><a href="/"><span>Home</span></a></li>
                       <li><a href="about-coach"><span>About Coach</span></a></li>
                       <li><a href="contacts"><span>Contact Us</span></a></li>
+                      <li><a href="{{ route('modalidades.index') }}"><span>Manage</span></a></li>
                       <li><form method="POST" action="{{ route('logout') }}">
                       @csrf
                       <a  href="{{ route('logout') }}" onclick="event.preventDefault();
@@ -148,7 +149,7 @@
       </section>
       <section data-preset='{"title":"Carousel 1","category":"content, carousel","reload":true,"id":"carousel-1"}'>
         <div class="owl-carousel owl-carousel-default d-lg-none-owl-dots veil-owl-nav d-lg-owl-nav" data-items="1" data-sm-items="2" data-lg-items="3" data-xl-items="4" data-nav="true" data-dots="true" data-nav-class="[&quot;owl-prev mdi mdi-chevron-left&quot;, &quot;owl-next mdi mdi-chevron-right&quot;]">
-          <div>
+          <!-- <div>
             <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="{{asset('images/home-01-480x480.jpg')}}" alt=""/></a>
               <figcaption>
                 <div>
@@ -157,59 +158,34 @@
                 <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
               </figcaption>
             </figure>
-          </div>
-          <div>
-            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="images/home-02-480x480.png" alt=""/></a>
+          </div> -->
+          
+        @foreach($modalidades as $key => $modalidade)
+                  <div>
+            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="{{asset('images/'.$modalidade->img)}}" alt=""/></a>
               <figcaption>
                 <div>
-                  <h4 class="thumbnail-terry-title">Fitness</h4>
+                  <h4 class="thumbnail-terry-title">{{$modalidade->nomeModalidade}}</h4>
                 </div>
-                <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
+                <button class="btn btn-danger" id="myBtn{{$key}}">First Free Lesson</button>
+                
               </figcaption>
+              <div id="myModal{{$key}}" class="modal object-fill" style="max-width:480px;margin-left:<?=480*($key)?>px;">
+                    
+                  <iframe style="" height="280px" width="100%" src="{{$modalidade->link}}" allowfullscreen=""></iframe>
+                  <div style="text-align:center; margin: auto;   width: 30%;">
+                  <span class="btn btn-danger close" id="close{{$key}}">
+                    Close
+                  </span>
+                  </div>
+              </div>
             </figure>
+           
           </div>
-          <div>
-            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="images/home-03-480x480.jpg" alt=""/></a>
-              <figcaption>
-                <div>
-                  <h4 class="thumbnail-terry-title">Crossfit</h4>
-                </div>
-                <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="images/home-04-480x480.jpg" alt=""/></a>
-              <figcaption>
-                <div>
-                  <h4 class="thumbnail-terry-title">Circle Studio</h4>
-                </div>
-                <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="images/home-06-480x480.png" alt=""/></a>
-              <figcaption>
-                <div>
-                  <h4 class="thumbnail-terry-title">Strength Training</h4>
-                </div>
-                <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
-              </figcaption>
-            </figure>
-          </div>
-          <div>
-            <figure class="thumbnail-terry"><a href="#"><img width="480" height="480" src="images/home-05-480x480.png" alt=""/></a>
-              <figcaption>
-                <div>
-                  <h4 class="thumbnail-terry-title">Yoga</h4>
-                </div>
-                <p class="thumbnail-terry-desc offset-top-0"></p><a class="btn offset-top-10 offset-lg-top-0 btn-danger" href="#">free first lesson</a>
-              </figcaption>
-            </figure>
-          </div>
-        </div>
+        @endforeach
+        </div> 
       </section>
+      
       <section class="section-98 section-md-110 novi-background" data-preset='{"title":"Team","category":"content, team","reload":false,"id":"team"}'>
         <div class="container">
           <h1>Coaches</h1>
@@ -219,7 +195,7 @@
               <div class="row">
                 <div class="col-md-6 col-xl-3">
                   <div class="box-member"><img class="img-fluid" src="images/foto 270x270.png" alt=""/>
-                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach.html">Cléber Junior</a> <small class="text-danger">CrossFit</small>
+                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach">Cléber Junior</a> <small class="text-danger">CrossFit</small>
                     </h5>
                     <div class="box-member-caption">
                       <div class="box-member-caption-inner">
@@ -235,7 +211,7 @@
                 </div>
                 <div class="col-md-6 col-xl-3 offset-top-66 offset-md-top-0 offset-xl-top-0">
                   <div class="box-member"><img class="img-fluid" src="images/foto2 270x270.png" alt=""/>
-                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach.html">Lucas Alberto</a> <small class="text-danger">Fitness</small>
+                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach">Lucas Alberto</a> <small class="text-danger">Fitness</small>
                     </h5>
                     <div class="box-member-caption">
                       <div class="box-member-caption-inner">
@@ -247,11 +223,11 @@
                       </div>
                     </div>
                   </div>
-                  <p class="offset-xl-top-0 text-muted">Emily can teach you all peculiarities of fitness and aerobics in a group or individually.</p>
+                  <p class="offset-xl-top-0 text-muted">Lucas can teach you all peculiarities of fitness and aerobics in a group or individually.</p>
                 </div>
                 <div class="col-md-6 col-xl-3 offset-top-66 offset-xl-top-0">
                   <div class="box-member"><img class="img-fluid" src="images/foto4 270x270.png" alt=""/>
-                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach.html">Julia Silva</a> <small class="text-danger">Yoga</small>
+                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach">Julia Silva</a> <small class="text-danger">Yoga</small>
                     </h5>
                     <div class="box-member-caption">
                       <div class="box-member-caption-inner">
@@ -267,7 +243,7 @@
                 </div>
                 <div class="col-md-6 col-xl-3 offset-top-66 offset-xl-top-0">
                   <div class="box-member"><img class="img-fluid" src="images/foto3 270x270.png" alt=""/>
-                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach.html">João Fortão</a> <small class="text-danger">Bodybuilding</small>
+                    <h5 class="font-weight-bold offset-top-20"><a href="about-coach">João Fortão</a> <small class="text-danger">Bodybuilding</small>
                     </h5>
                     <div class="box-member-caption">
                       <div class="box-member-caption-inner">
@@ -279,7 +255,7 @@
                       </div>
                     </div>
                   </div>
-                  <p class="offset-xl-top-0 text-muted">Austin is not only our most called-for coach, but also a winner of many championships.</p>
+                  <p class="offset-xl-top-0 text-muted">João is not only our most called-for coach, but also a winner of many championships.</p>
                 </div>
               </div><a class="offset-top-66 btn btn-danger" href="about-coach">view all coaches</a>
             </div>
@@ -323,5 +299,29 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    @foreach ($modalidades as $key => $modalidade)
+   <script>
+     
+      var modal{{$key}} = document.getElementById("myModal{{$key}}");
+     
+      var btn{{$key}} = document.getElementById("myBtn{{$key}}");
+
+      var span{{$key}} = document.getElementById("close{{$key}}");
+
+      btn{{$key}}.onclick = function() {
+        modal{{$key}}.style.display = "block";
+      }
+
+      span{{$key}}.onclick = function() {
+        modal{{$key}}.style.display = "none";
+      }
+
+      window.onclick = function(event) {
+        if (event.target == modal{{$key}}) {
+          modal{{$key}}.style.display = "none";
+        }
+      }
+    </script>
+    @endforeach
   </body>
 </html>
