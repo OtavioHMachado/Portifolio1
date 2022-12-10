@@ -17,7 +17,7 @@
           <div class="row">     
             <div class="col-sm-8 offset-sm-2">
 
-              <h1 class="display-3">Add Stock</h1>
+              <h1 class="display-3">Add New Category</h1>
             <div>
               @if ($errors->any())
                 <div class="alert alert-danger">
@@ -31,17 +31,17 @@
                 <form enctype="multipart/form-data" method="post" action="{{ route('modalidades.store') }}">
                     @csrf
                     <div class="form-group">    
-                        <label for="nomeModalidade">nomeModalidade:*</label>
+                        <label for="nomeModalidade">Category:*</label>
                         <input type="text" class="form-control" name="nomeModalidade"/>
                     </div>
             
                     <div class="form-group">
-                        <label for="image">img*</label>
+                        <label for="image">Image*</label>
                         <input type="file" class="form-control" name="image"/>
                     </div>
             
                     <div class="form-group">
-                        <label for="link">link</label>
+                        <label for="link">Link for Video</label>
                         <input type="text" class="form-control" name="link"/>
                     </div>
                     <button type="submit" class="btn btn-primary">Criar</button>
