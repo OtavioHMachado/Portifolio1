@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
 
 
 
@@ -9,6 +9,7 @@
 ### Sobre o projeto
 
 - Projeto para chamar atenção de pessoas que trabalham ou estudam na area de TI, para que consigam balancear a vida saudável com os estudos, até porque, quem trabalha nessa área fica muito tempo parado e acaba esquecendo ou até não tendo tempo de praticar exercícios físicos e ter uma alimentação saudável.
+- Ajudar Profissionais da area de educação fisica e nutrição no mercado de trabalho
 - Espero ajudar algumas pessoas :)
 
 ### Ajustes e melhorias
@@ -18,7 +19,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Tarefa 1 - Escopo do projeto
 - [x] Tarefa 2 - Escolher Linguagens
 - [x] Tarefa 3 - Fazer Backend
-- [ ] Tarefa 4 - Terminar Frontend
+- [x] Tarefa 4 - Terminar Frontend
 - [ ] Tarefa 5 - Apresentação
 
 ## 💻 Pré-requisitos
@@ -27,40 +28,26 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 * Você instalou a versão mais recente de `Laravel/ Windows Docker?`
 * Você Seguiu o passo a passo  de comandos para instalar e atualizar os frameworks?
-* Você tem uma máquina `Ubuntu/Linux?`. Indique qual sistema operacional é compatível / não compatível.
+* Você tem uma máquina `Ubuntu/Linux?`. 
 
 ## 🚀 Instalando Treino Intenso
 
 Para instalar o TI(Treino Intenso), siga os links a seguir para facil instalação:
 
-Linux/Ubuntu
-
-https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
-
-Windows Docker
-
-https://docs.docker.com/desktop/install/windows-install/
-
-## ☕ Usando o TI(Treino Instenso)
-
-Para usar projeto, siga essas etapas:
-
-cd /home
+- Habilitar VM na BIOS do placa mãe
 <br>
-explorer.exe .
+- Instalar o WSL no computador
+Encontra-se facilmente no Windows Store.
 <br>
-cd otavio272
-<br>
-cd Portifolio1
-<br>
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-<br>
-sail up
-<br>
+- Instalar o Ubuntu
+    https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
+ <br>
+- Instalar o Docker 
+    https://docs.docker.com/desktop/install/windows-install/
+- Clone o projeto
+   
+-No terminal, instalar as bibliotecas com o seguintes comandos
 
-no CMD após conectar o wsl nele, execute:
-<br>
-composer create-project laravel/laravel nomeapp
 <br>
 composer require laravel/sail
 <br>
@@ -78,8 +65,11 @@ php artisan sail:install
 <br>
 ./vendor/bin/sail up
 <br>
-
-depois disso, poderá entrar no local host.
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+<br>
+e para executar
+<br>
+sail up
 
 ### 🤝 Declarações finais
 
