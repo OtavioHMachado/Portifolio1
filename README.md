@@ -6,11 +6,15 @@
 
 > Projeto TI (Treino Intenso) na qual é para ajudar pessoas que querem começar a se exercitarem!
 
-### Sobre o projeto
+# Sobre o projeto/Para que serve
 
 - Projeto para chamar atenção de pessoas que trabalham ou estudam na area de TI, para que consigam balancear a vida saudável com os estudos, até porque, quem trabalha nessa área fica muito tempo parado e acaba esquecendo ou até não tendo tempo de praticar exercícios físicos e ter uma alimentação saudável.
 - Ajudar Profissionais da area de educação fisica e nutrição no mercado de trabalho
+- Diminuir a taxa de obesidade.
+- Este trabalho teve como proposta ter acessibilidade para pessoas que não tem “tempo” ou insegurança para ir em consultas nutricionais e físicas
 - Espero ajudar algumas pessoas :)
+
+
 
 ### Ajustes e melhorias
 
