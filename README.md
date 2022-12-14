@@ -77,7 +77,8 @@ sail up
 
 ### Diagrama de classe
 
-<img src="dClasse.png">
+[Diagrama](https://user-images.githubusercontent.com/101725628/207686788-58b797e3-ce83-48f1-a8ee-37794a1aa3fa.png)
+
 
 ### 🤝 Declarações finais
 
