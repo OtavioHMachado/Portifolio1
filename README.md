@@ -75,6 +75,10 @@ e para executar
 <br>
 sail up
 
+### Diagrama de classe
+
+<img src="dClasse.png">
+
 ### 🤝 Declarações finais
 
 Agradeço a todos que me ajudaram neste projeto de encerramento de curso, aprendi várias coisas novas tanto aplicadas no curso quanto aprendidas no meu estágio, no começo foi bem dificil desenvolver as coisas pois nunca tive contato tão tirado e sozinho de uma coisa do zero, mas com muito esforço e dedicação, consegui chegar a um resultado apresentável 
