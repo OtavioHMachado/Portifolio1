@@ -75,9 +75,11 @@ e para executar
 <br>
 sail up
 
-### Diagrama de classe
+### Modelagem de dados
+![Banco de dados](https://user-images.githubusercontent.com/101725628/207934859-1c559ae1-e4a9-4662-bb00-bf4b2271614f.png)
 
-[Diagrama](https://user-images.githubusercontent.com/101725628/207686788-58b797e3-ce83-48f1-a8ee-37794a1aa3fa.png)
+<br>
+![Diagrama de casos de uso](https://user-images.githubusercontent.com/101725628/207934720-796afe5b-cf44-436a-ae58-c378968c78ab.png)
 
 
 ### 🤝 Declarações finais
